@@ -6,15 +6,15 @@ bandwidth = 505:545;
 
 % define properties for the fluorophore with defined units
 FL1.filename = 'data/FITC.csv';
-FL1.EC = 75000; 
-FL1.QY = 0.92;
+FL1.EC = 75000;  % molar extinction coefficient at peak excitation
+FL1.QY = 0.92; % quantum yield
 
 [FL1] = get_spectra(FL1, lambda, bandwidth);
 
 % define properties for the fluorophore to assign units to
 FL2.filename = 'data/SYBR Gold.csv';
-FL2.EC = 57000;
-FL2.QY = 0.6;
+FL2.EC = 57000; % molar extinction coefficient at peak excitation
+FL2.QY = 0.6; % quantum yield
 
 [FL2] = get_spectra(FL2, lambda, bandwidth);
 
